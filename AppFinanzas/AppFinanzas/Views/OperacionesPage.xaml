@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinanzas.Views.OperacionesPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:AppFinanzas.ViewModels"
+             xmlns:model="clr-namespace:AppFinanzas.Models"
+             x:Name="BrowseOperacionesPage"
+             x:DataType="local:OperacionesViewModel">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="EGRESOS"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"/>
+                <!--<CollectionView x:Name="OperacionesListView" ItemsSource="{Binding Operaciones}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:DataType="model:Operacion">
+                                <Label Text="{Binding Descripcion}"/>
+                                <Label Text="{Binding Monto}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>-->
+            </StackLayout>
+            <StackLayout>
+                <Label Text="INGRESOS"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
